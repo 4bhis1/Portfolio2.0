@@ -5,6 +5,7 @@ import Main from "./Pages/Main";
 import Services from "./Pages/Services";
 
 function App() {
+  console.log("Nice");
   return (
     <>
       <Header />
