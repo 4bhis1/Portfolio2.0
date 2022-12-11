@@ -11,6 +11,13 @@ function App() {
       <Header />
       <Main />
       <Services />
+      <div
+        style={{
+          backgroundColor: "ghostwhite",
+          display: "flex",
+          height: "100vh",
+        }}
+      ></div>
     </>
   );
 }

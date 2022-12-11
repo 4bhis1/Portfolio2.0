@@ -1,25 +1,12 @@
 import React, { Component } from "react";
-
-import Color from "../Theme/Theme";
+import ParticleBG from "./ParticleBG";
 
 export default class Services extends Component {
   render() {
     return (
-      <div style={{ height: "100vh", backgroundColor: Color.white }}>
-        <div
-          style={{
-            backgroundColor: Color.white,
-            display: "flex",
-            justifyContent: "center",
-            fontSize: 60,
-            fontWeight: "bold",
-            color: Color.black,
-            padding: 40,
-          }}
-        >
-          About Company
-        </div>
-        <div></div>
+      <div style={{ height: "100vh" }}>
+        <ParticleBG />
+        <div style={{ color: "white", backgroundColor: "green" }}>Services</div>
       </div>
     );
   }
