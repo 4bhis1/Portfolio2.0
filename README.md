@@ -15,3 +15,4 @@ Present Portfolio live at <a href="https://4bhis1.github.io/Portfolio2.0/">4bhis
 - [ ] Contact
 - [ ] Send Mail through it
 - [ ] Footer
+- [ ] Mobile Responsive
