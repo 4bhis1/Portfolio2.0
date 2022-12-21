@@ -20,3 +20,4 @@ Present Portfolio live at <a href="https://4bhis1.github.io/Portfolio2.0/">4bhis
 - [ ] Resume
 - [ ] WorkOn Social Media
 - [ ] Work on Leave a message
+- [ ] Mobile Responsive
