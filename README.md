@@ -5,13 +5,18 @@ Present Portfolio live at <a href="https://4bhis1.github.io/Portfolio2.0/">4bhis
 
 # Wishlist of Portfolio
 
-- [ ] Implement Particle.js
+- [x] Implement Particle.js
 - [ ] Add Styling in Nav
-- [ ] Use AnimationCSS in Projects and skills
-- [ ] Landing Page and its footer
+- [ ] Landing Page
+- [ ] Landing Page Footer Styling
 - [ ] Skills Section
 - [ ] Projects
 - [ ] Timeline
 - [ ] Contact
 - [ ] Send Mail through it
 - [ ] Footer
+- [ ] Use AnimationCSS in Projects and skills
+- [ ] WebSite Logo
+- [ ] Resume
+- [ ] WorkOn Social Media
+- [ ] Work on Leave a message

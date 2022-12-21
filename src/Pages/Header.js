@@ -1,50 +1,73 @@
-import React, { Component } from "react";
+import React from "react";
+import { isMobile } from "../Components/lib/Utils";
+import View from "../Components/View";
 
-import Color from "../Theme/Theme";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-export class Header extends Component {
-  render() {
-    return (
-      <div
-        style={{
-          display: "flex",
-          backgroundColor: Color.white,
-          color: Color.black,
-          justifyContent: "space-between",
-          alignItems: "center",
-          //   padding: 10,
-          paddingLeft: 100,
-          paddingRight: 100,
-          fontSize: 22,
-          height: "10vh",
-          position: "relative",
-        }}
-      >
-        <div>Name</div>
-        <div style={{ display: "flex", height: "-webkit-fill-available" }}>
-          <div style={{ ...styles.navigationItem, backgroundColor: Color.orange }}>Main</div>
-          <div style={{ ...styles.navigationItem }}>About</div>
-          <div style={{ ...styles.navigationItem }}>Services</div>
-          <div style={{ ...styles.navigationItem }}>News</div>
-        </div>
-
-        <div>Contact Number</div>
-      </div>
-    );
-  }
-}
+const Header = () => {
+  return (
+    <View
+      style={{
+        display: "flex",
+        backgroundColor: "white",
+        justifyContent: "space-between",
+        alignItems: "center",
+        paddingHorizontal: isMobile ? 10 : "2rem",
+        fontSize: 18,
+        height: "10vh",
+        // position: "fixed",
+        top: 0,
+        zIndex: 9999,
+        flex: 1,
+      }}
+    >
+      <View style={{ fontWeight: "bold", fontSize: 40 }}>
+        {/* <a href="https://4bhis1.github.io/portfolio/"> */}
+        Portfo
+        <span style={{ color: "crimson" }} id="lio">
+          lio.
+        </span>
+        {/* </a> */}
+      </View>
+      {isMobile ? (
+        <View
+          style={{
+            padding: 10,
+            cursor: "pointer",
+            borderRadius: 5,
+            borderColor: "black",
+            borderStyle: "solid",
+            borderWidth: 2,
+          }}
+        >
+          <GiHamburgerMenu />
+        </View>
+      ) : (
+        <View>
+          <View
+            style={{
+              ...styles.navigationItem,
+              backgroundColor: "orange",
+            }}
+          >
+            Home
+          </View>
+          <View style={{ ...styles.navigationItem }}>Skills</View>
+          <View style={{ ...styles.navigationItem }}>Projects</View>
+          <View style={{ ...styles.navigationItem }}>Timeline</View>
+          <View style={{ ...styles.navigationItem }}>Experience</View>
+          <View style={{ ...styles.navigationItem }}>Contact Me</View>
+          <View style={{ padding: 10 }}>LM</View>
+        </View>
+      )}
+    </View>
+  );
+};
 
 export default Header;
 
 let styles = {
   navigationItem: {
-    // margin: 10,
-    // height: 40,
     padding: 10,
-    // position: "absolute",
-    // alignItems: "",
-    cursor: "pointer",
-    display: "flex",
-    alignItems: "center",
   },
 };
