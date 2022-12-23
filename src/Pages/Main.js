@@ -5,18 +5,55 @@ import kl from "../Image/kl.jpeg";
 import View from "../Components/View";
 import { isMobile } from "../Components/lib/Utils";
 
+import Abhishek_Kumar from "../Image/AbhishekKumar.jpeg";
+
+import { FaCloudDownloadAlt } from "react-icons/fa";
+
 export class Main extends Component {
   render() {
     return (
       <View
         style={{
           height: "90vh",
-          display: "block",
-          backgroundColor : "blue"
+          flexDirection: "column",
+          backgroundColor: "blue",
         }}
       >
         {isMobile ? (
-          <View>Hello</View>
+          <View
+            style={{
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+              flex: 1,
+              padding : 50
+            }}
+          >
+            <img
+              src={Abhishek_Kumar}
+              height={500 / 2}
+              width={250}
+              alt="Abhishek Kumar"
+              style={{ borderRadius: 100 }}
+            />
+            <View style={{ marginTop: 20, color: "white" }}>
+              Lorem Ipsum some random data aur ankit Lorem Ipsum some random
+              data aur ankit Lorem Ipsum some random data aur ankit Lorem Ipsum
+              some random data aur ankit{" "}
+            </View>
+            <View
+              style={{
+                // padding: 10,
+                bgColor: "orange",
+                marginTop: 30,
+                borderRadius: 50,
+                paddingHorizontal: 20,
+                paddingVertical: 10,
+              }}
+            >
+              <FaCloudDownloadAlt style={{ marginRight: 10 }} /> Resume
+            </View>
+          </View>
         ) : (
           <>
             <img

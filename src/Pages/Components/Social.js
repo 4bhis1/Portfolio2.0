@@ -32,10 +32,8 @@ const SocialMediaDialog = ({ updateShow, show }) => (
       <View
         style={{
           position: "relative",
-          // width: "min-content",
           justifyContent: "space-between",
           alignItems: "center",
-          // backgroundColor: "lightBlack",
           background:
             "linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(32,30,30,1) 34%, rgba(59,54,54,1) 62%)",
           paddingHorizontal: 10,
@@ -91,11 +89,38 @@ const SocialIcons = ({ imageIcon, iconName, onClick }) => (
 const Social = () => {
   const [show, updateShow] = useState({ show: false });
 
+  const data = [
+    {
+      name: "Gmail",
+      icon: gmail,
+      links: "https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4",
+    },
+    {
+      name: "Github",
+      icon: github,
+      links: "https://github.com/4bhis1",
+    },
+    {
+      name: "Dev",
+      icon: dev,
+      links: "https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4",
+    },
+    {
+      name: "Linkedin",
+      icon: linkedin,
+      links: "https://www.linkedin.com/in/absk/",
+    },
+    {
+      name: "Instagram",
+      icon: instagram,
+      links: "https://www.instagram.com/4bhis1/",
+    },
+  ];
+
   return (
     <View
       style={{
         position: "fixed",
-        // backgroundColor: "black",
         backgroundColor: "blue",
         flexDirection: "column",
         zIndex: 1000,
@@ -110,66 +135,21 @@ const Social = () => {
       }}
     >
       {show.show && <SocialMediaDialog show={show} updateShow={updateShow} />}
-      <SocialIcons
-        imageIcon={gmail}
-        alt="G Mail"
-        onClick={() => {
-          updateShow({
-            show: true,
-            title: "Gmail",
-            icon: gmail,
-            links: "https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4",
-          });
-        }}
-      />
-      <SocialIcons
-        imageIcon={github}
-        alt="Github"
-        onClick={() => {
-          updateShow({
-            show: true,
-            title: "Github",
-            icon: github,
-            links: "https://github.com/4bhis1",
-          });
-        }}
-      />
-      <SocialIcons
-        imageIcon={dev}
-        alt="Dev"
-        onClick={() => {
-          updateShow({
-            show: true,
-            title: "Dev",
-            icon: dev,
-            links: "https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4",
-          });
-        }}
-      />
-      <SocialIcons
-        imageIcon={linkedin}
-        alt="Linkedin"
-        onClick={() => {
-          updateShow({
-            show: true,
-            title: "Linkedin",
-            icon: linkedin,
-            links: "https://www.linkedin.com/in/absk/",
-          });
-        }}
-      />
-      <SocialIcons
-        imageIcon={instagram}
-        alt="Instagram"
-        onClick={() => {
-          updateShow({
-            show: true,
-            title: "Instagram",
-            icon: instagram,
-            links: "https://www.instagram.com/4bhis1/",
-          });
-        }}
-      />
+      {data.map(({ name, icon, links }, index) => (
+        <SocialIcons
+          imageIcon={icon}
+          alt={name}
+          key={index}
+          onClick={() => {
+            updateShow({
+              show: true,
+              title: name,
+              icon: icon,
+              links: links,
+            });
+          }}
+        />
+      ))}
     </View>
   );
 };

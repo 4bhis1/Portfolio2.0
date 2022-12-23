@@ -8,19 +8,21 @@ import Social from "./Pages/Components/Social";
 import SendMail from "./Pages/Components/SendMail";
 import Footer from "./Pages/Footer";
 import { isMobile } from "./Components/lib/Utils";
+import Skills from "./Pages/Skills";
 
 function App() {
   return (
     <>
       <Header />
       <Main />
-      <Services />
+      {/* <Services /> */}
       {!isMobile && (
         <>
           <Social />
           <SendMail />
         </>
       )}
+      <Skills />
 
       <Footer />
     </>

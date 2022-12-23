@@ -1,4 +1,4 @@
-const getMobile = () => window.innerWidth < 680;
+const getMobile = () => window.innerWidth < 700;
 
 const isMobile = getMobile();
 
