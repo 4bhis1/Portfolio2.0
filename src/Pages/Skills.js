@@ -120,7 +120,7 @@ const SkillIconsAndNames = ({ icon, name }) => (
       width={isMobile ? 50 : 80}
     />
     <View
-      style={{ color: "white", fontSize: 22, marginTop: 10, fontWeight: 700 }}
+      style={{ color: "white", fontSize: (isMobile ? 16: 22), marginTop: 10, fontWeight: 700 }}
     >
       {name}
     </View>

@@ -10,7 +10,11 @@ import Footer from "./Pages/Footer";
 import { isMobile } from "./Components/lib/Utils";
 import Skills from "./Pages/Skills";
 
+const data = "./count.json"
+
 function App() {
+
+  console.log("data " , data)
   return (
     <>
       <Header />

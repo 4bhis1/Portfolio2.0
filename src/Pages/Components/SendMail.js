@@ -89,13 +89,23 @@ const SendMail = () => {
           </View>
           <View
             style={{
-              display: "block",
+              display: "flex",
+              flexDirection: "column",
               flex: 1,
               padding: 10,
             }}
           >
-            <input type="text" placeholder="Write your email..." />
-            <textarea placeholder="Content ..." style={{ marginTop: 10 }} />
+            <input type="text" placeholder="Write your email..." style={{paddingLeft : 10}}/>
+            <textarea
+              placeholder="Content ..."
+              style={{
+                marginTop: 10,
+                flex: 1,
+                resize: "none",
+                padding: 10,
+                width: "auto",
+              }}
+            />
           </View>
           <View style={{ justifyContent: "end", padding: 5 }}>
             <View
