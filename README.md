@@ -23,9 +23,7 @@ Present Portfolio live at <a href="https://4bhis1.github.io/Portfolio2.0/">4bhis
 - [ ] Mobile Responsive
 - [ ] Add animation to increase the height 
 - [ ] Work on burger Button and add functionality to it
-
-
-
+- [ ] Header and Projects Similar <a href="https://rajrajhans.com/about/">Click</a>
 
 
 
