@@ -9,26 +9,25 @@ import SendMail from "./Pages/Components/SendMail";
 import Footer from "./Pages/Footer";
 import { isMobile } from "./Components/lib/Utils";
 import Skills from "./Pages/Skills";
+import Mode from "./Components/Mode";
 
-const data = "./count.json"
+const data = "./count.json";
 
 function App() {
-
-  console.log("data " , data)
   return (
     <>
-      <Header />
+      {/* <Header />
       <Main />
       {/* <Services /> */}
-      {!isMobile && (
-        <>
-          <Social />
-          <SendMail />
-        </>
-      )}
+      {/* {!isMobile && (
+        // <>
+        //   <Social />
+        //   <SendMail />
+        // </>
+      )} */}
       <Skills />
-
-      <Footer />
+      <Mode />
+      {/* <Footer /> */}
     </>
   );
 }
