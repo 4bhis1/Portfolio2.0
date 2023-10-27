@@ -17,7 +17,7 @@ export default {
     link: "redirect uri",
     skills: ["React", "CSS", "HTML"],
   },
-  LEETBUDDY: {
+  "DSA Buddy": {
     description: "Share Wave is a webapp helps to share the data.",
     image: "your image",
     link: "redirect uri",

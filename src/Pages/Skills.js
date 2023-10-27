@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/skills.css";
+import "./styles/skills.css";
 import skills from "../Constants/Skills";
 
 const StackCard = ({ skills }) => {

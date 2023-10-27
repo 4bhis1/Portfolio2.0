@@ -8,8 +8,8 @@ export default {
     "React Native": "normal",
     Typescript: "usedTo",
     Jest: "toLearn",
-    "Next Js 13": "toLearn",
     Redux: "normal",
+    "Next Js 13": "toLearn",
   },
   Backend: {
     "Node Js": "favourable",
@@ -17,6 +17,7 @@ export default {
     Mongoose: "favourable",
     Swagger: "normal",
     JWT: "usedTo",
+    Python: "hide",
   },
   Databases: {
     MongoDB: "favourable",
