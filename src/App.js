@@ -2,6 +2,8 @@ import React, { useEffect, useLayoutEffect, useState } from "react";
 import SendMail from "./Components/SendMail";
 import Skills from "./Pages/Skills";
 import Mode from "./Components/Mode";
+import UserCard from "./Pages/UserCard";
+import LeftNav from "./Pages/LeftNav";
 
 function App() {
   const [isDark, updateTheme] = useState(true);
@@ -22,16 +24,13 @@ function App() {
 
   return (
     <>
-      {/* <Header />
-      <Main />
-      {/* <Services /> */}
-      {/* {!isMobile && (
-        // <>
-        //   <Social />
-        //   <SendMail />
-        // </>
-      )} */}
-      <Skills />
+      <div className="topContainer">
+        <LeftNav />
+        <div className="column topRightContainer">
+          <UserCard />
+          <Skills />
+        </div>
+      </div>
       <Mode toggleTheme={toggleTheme} isDark={isDark} />
       <SendMail />
     </>

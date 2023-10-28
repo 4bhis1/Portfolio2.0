@@ -1,0 +1,6 @@
+.leftNavContainer {
+  background-color: var(--color-secondaryColor);
+  border-radius: 10px;
+  width: 400px;
+  margin: 10px;
+}

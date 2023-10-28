@@ -9,20 +9,43 @@ body {
   background-color: var(--color-background);
 }
 
+div {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
 .light {
   --color-background: #fafafa;
   --color-foreground: #1f2023;
 
   --image-grayscale: 0;
   --image-opacity: 100%;
+  --color-linkedin: #004182;
 }
 
 .dark {
-  --color-background: #1f2023;
+  /* --color-background: #1f2023; */
+  --color-background: #0d1117;
   --color-foreground: #efefef;
+
+  --color-secondaryColor: #1c1b23;
 
   --image-grayscale: 50%;
   --image-opacity: 90%;
+  --color-linkedin: #004182;
+}
+
+.topContainer {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.topRightContainer {
+  margin: 10px 10px 10px 0;
 }
 
 img,
