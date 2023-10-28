@@ -6,6 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  background-color: var(--color-background);
+}
+
+.light {
   --color-background: #fafafa;
   --color-foreground: #1f2023;
 
@@ -13,7 +17,7 @@ body {
   --image-opacity: 100%;
 }
 
-body.dark {
+.dark {
   --color-background: #1f2023;
   --color-foreground: #efefef;
 
@@ -24,9 +28,4 @@ body.dark {
 img,
 video {
   filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

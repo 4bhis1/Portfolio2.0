@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import SendMail from "./Components/SendMail";
 import Skills from "./Pages/Skills";
 import Mode from "./Components/Mode";
@@ -10,12 +10,13 @@ function App() {
     updateTheme((isDark) => !isDark);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (isDark) {
-      document.body.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      document.documentElement.classList.add("dark");
     } else {
-      console.log(">>> here")
-      document.body.classList.remove("light");
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
     }
   }, [isDark]);
 
