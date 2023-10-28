@@ -20,5 +20,11 @@ export default [
         Prettier
     `,
   },
-  {},
+  {
+    title: "handle light and dark mode in React",
+    desc: `
+        Dark Mode
+        Light Mode
+    `,
+  },
 ];

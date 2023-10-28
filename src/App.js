@@ -1,9 +1,24 @@
-import "./App.css";
+import React, { useEffect, useState } from "react";
 import SendMail from "./Components/SendMail";
 import Skills from "./Pages/Skills";
 import Mode from "./Components/Mode";
 
 function App() {
+  const [isDark, updateTheme] = useState(true);
+
+  const toggleTheme = () => {
+    updateTheme((isDark) => !isDark);
+  };
+
+  useEffect(() => {
+    if (isDark) {
+      document.body.classList.add("dark");
+    } else {
+      console.log(">>> here")
+      document.body.classList.remove("light");
+    }
+  }, [isDark]);
+
   return (
     <>
       {/* <Header />
@@ -15,8 +30,8 @@ function App() {
         //   <SendMail />
         // </>
       )} */}
-      {/* <Skills /> */}
-      <Mode />
+      <Skills />
+      <Mode toggleTheme={toggleTheme} isDark={isDark} />
       <SendMail />
     </>
   );

@@ -3,11 +3,10 @@ import "./styles/mode.css";
 import { BsSunFill } from "react-icons/bs";
 import { BsMoonFill } from "react-icons/bs";
 
-const Mode = () => {
-  const nightMode = false;
+const Mode = ({ toggleTheme, isDark }) => {
   return (
-    <div className="modeContainer">
-      {nightMode ? (
+    <div className="modeContainer" onClick={toggleTheme}>
+      {isDark ? (
         <BsMoonFill
           className="icon"
           style={{ height: 30, width: 30, color: "#C9D1D9" }}
