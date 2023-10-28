@@ -21,12 +21,7 @@ const SendMailHeader = ({ toggleShowMail, showMail }) => {
       <div className="headerText">
         {!showMail ? "Leave a message" : "Send a message..."}
       </div>
-      <div
-        className="headerRightIconContainer"
-        onClick={() => {
-          toggleShowMail(true);
-        }}
-      >
+      <div className="headerRightIconContainer" onClick={toggleShowMail}>
         {!showMail ? (
           <FiMaximize
             style={{
@@ -59,7 +54,7 @@ const SendMail = () => {
       {!showMail ? (
         <SendMailHeader toggleShowMail={toggleShowMail} showMail={showMail} />
       ) : (
-        <div className="sendMailContainer" style={{}}>
+        <div className="sendMailContainer">
           <SendMailHeader toggleShowMail={toggleShowMail} showMail={showMail} />
           <div
             style={{
