@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import SendMail from "./Components/SendMail";
 import Skills from "./Pages/Skills";
 import Mode from "./Components/Mode";
+import UserCard from "./Pages/UserCard";
+import LeftNav from "./Pages/LeftNav";
 
 function App() {
   const [isDark, updateTheme] = useState(true);
@@ -10,27 +12,25 @@ function App() {
     updateTheme((isDark) => !isDark);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (isDark) {
-      document.body.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      document.documentElement.classList.add("dark");
     } else {
-      console.log(">>> here")
-      document.body.classList.remove("light");
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
     }
   }, [isDark]);
 
   return (
     <>
-      {/* <Header />
-      <Main />
-      {/* <Services /> */}
-      {/* {!isMobile && (
-        // <>
-        //   <Social />
-        //   <SendMail />
-        // </>
-      )} */}
-      <Skills />
+      <div className="topContainer">
+        <LeftNav />
+        <div className="column topRightContainer">
+          <UserCard />
+          <Skills />
+        </div>
+      </div>
       <Mode toggleTheme={toggleTheme} isDark={isDark} />
       <SendMail />
     </>
