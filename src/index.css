@@ -46,6 +46,12 @@ div {
 
 .topRightContainer {
   margin: 10px 10px 10px 0;
+  overflow-y: scroll;
+}
+
+.topRightFirstContainer {
+  flex-direction: column;
+  overflow: hidden;
 }
 
 img,

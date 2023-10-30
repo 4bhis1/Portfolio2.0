@@ -27,8 +27,10 @@ function App() {
       <div className="topContainer">
         <LeftNav />
         <div className="column topRightContainer">
-          <UserCard />
-          <Skills />
+          <div className="topRightFirstContainer">
+            <UserCard />
+            <Skills />
+          </div>
         </div>
       </div>
       <Mode toggleTheme={toggleTheme} isDark={isDark} />

@@ -3,4 +3,81 @@
   border-radius: 10px;
   width: 400px;
   margin: 10px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.routesContainer {
+  flex: 3;
+  /* background-color: azure; */
+  padding: 18px;
+  justify-content: center;
+}
+
+.lists {
+  flex-direction: column;
+  position: relative;
+}
+
+.progress {
+  position: absolute;
+  width: 4px;
+  background-color: cadetblue;
+  left: 12px;
+  top: 22px;
+  transition: height 500ms;
+  border-radius: 5px;
+}
+
+.list {
+  align-items: center;
+  padding: 10px 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 100%;
+  background-color: cadetblue;
+  padding: 6px;
+}
+
+.active {
+  background-color: rgb(95, 105, 160);
+}
+
+.text {
+  padding-left: 12px;
+  color: var(--color-foreground);
+}
+
+.activeText {
+  color: rgb(95, 105, 160);
+}
+
+.socialContainer {
+  flex: 5;
+  /* background-color: aquamarine; */
+  color: var(--color-foreground);
+  padding: 18px;
+  /* justify-content: center; */
+}
+
+.socialText {
+  font-size: 22px;
+}
+
+.socials {
+  flex-direction: column;
+  margin: 20px;
+}
+
+.social {
+  align-items: center;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.socialIconStyle {
+  font-size: 32px;
 }

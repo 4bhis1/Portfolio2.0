@@ -1,13 +1,13 @@
 import React from "react";
 import "./styles/mode.css";
 import { BsSunFill } from "react-icons/bs";
-import { BsMoonFill } from "react-icons/bs";
+import { BsMoonStarsFill } from "react-icons/bs";
 
 const Mode = ({ toggleTheme, isDark }) => {
   return (
     <div className="modeContainer" onClick={toggleTheme}>
       {isDark ? (
-        <BsMoonFill
+        <BsMoonStarsFill
           className="icon"
           style={{ height: 30, width: 30, color: "#C9D1D9" }}
         />
