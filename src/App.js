@@ -1,34 +1,40 @@
-import "./App.css";
-import Header from "./Pages/Header";
-import Main from "./Pages/Main";
-import Services from "./Pages/Services";
-
-import View from "./Components/View";
-import Social from "./Pages/Components/Social";
-import SendMail from "./Pages/Components/SendMail";
-import Footer from "./Pages/Footer";
-import { isMobile } from "./Components/lib/Utils";
+import React, { useEffect, useLayoutEffect, useState } from "react";
+import SendMail from "./Components/SendMail";
 import Skills from "./Pages/Skills";
-
-const data = "./count.json"
+import Mode from "./Components/Mode";
+import UserCard from "./Pages/UserCard";
+import LeftNav from "./Pages/LeftNav";
 
 function App() {
+  const [isDark, updateTheme] = useState(true);
 
-  console.log("data " , data)
+  const toggleTheme = () => {
+    updateTheme((isDark) => !isDark);
+  };
+
+  useLayoutEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.remove("light");
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDark]);
+
   return (
     <>
-      <Header />
-      <Main />
-      {/* <Services /> */}
-      {!isMobile && (
-        <>
-          <Social />
-          <SendMail />
-        </>
-      )}
-      <Skills />
-
-      <Footer />
+      <div className="topContainer">
+        <LeftNav />
+        <div className="column topRightContainer">
+          <div className="topRightFirstContainer">
+            <UserCard />
+            <Skills />
+          </div>
+        </div>
+      </div>
+      <Mode toggleTheme={toggleTheme} isDark={isDark} />
+      <SendMail />
     </>
   );
 }

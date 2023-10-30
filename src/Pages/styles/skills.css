@@ -1,0 +1,44 @@
+.skillsContainer {
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.skills {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--color-secondaryColor);
+  flex: 1;
+  flex-direction: column;
+}
+
+.stackCard {
+  flex-wrap: wrap;
+  text-wrap: nowrap;
+}
+
+.stackCardItem {
+  width: min-content;
+  background-color: #30363d;
+  margin: 2px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  color: #c9d1d9;
+}
+
+.normal {
+  border-color: hsla(220, 9%, 46%, 0.6);
+}
+
+.favourable {
+  border-color: rgba(34, 197, 94, 0.6);
+}
+
+.usedTo {
+  border-color: rgba(59, 130, 246, 0.6);
+}
+
+.toLearn {
+  border-color: rgba(239, 68, 68, 0.6);
+}
