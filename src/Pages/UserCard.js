@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/userCard.css";
-import MyImage from "../Image/AbhishekKumar.jpeg";
+import MyImage from "../Image/AbhishekKumar.jpg";
 import { AiFillLinkedin } from "react-icons/ai";
 
 const UserCard = () => {
