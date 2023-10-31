@@ -21,7 +21,7 @@ const Skills = () => {
     <div className="skillsContainer">
       {Object.keys(skills).map((doc, index) => (
         <div className="skills">
-          <div>{doc}</div>
+          <div className="skillText">{doc}</div>
           <StackCard skills={skills[doc]} />
         </div>
       ))}

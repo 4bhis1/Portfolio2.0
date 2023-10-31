@@ -2,8 +2,8 @@ export default {
   Frontend: {
     HTML: "usedTo",
     CSS: "normal",
-    Tailwind: "normal",
     "Javascript (above ES6)": "favourable",
+    Tailwind: "normal",
     "React Js": "favourable",
     "React Native": "normal",
     Typescript: "usedTo",
@@ -18,13 +18,12 @@ export default {
     Swagger: "normal",
     JWT: "usedTo",
     Python: "hide",
-  },
-  Databases: {
     MongoDB: "favourable",
     Redis: "toLearn",
   },
   Tools: {
     Git: "favourable",
+    Storybook: "favourable",
     Docker: "toLearn",
     Postman: "favourable",
     Jenkins: "usedTo",
