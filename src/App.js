@@ -4,6 +4,7 @@ import Skills from "./Pages/Skills";
 import Mode from "./Components/Mode";
 import UserCard from "./Pages/UserCard";
 import LeftNav from "./Pages/LeftNav";
+import Blogs from "./Pages/Blogs";
 
 function App() {
   const [isDark, updateTheme] = useState(true);
@@ -30,6 +31,7 @@ function App() {
           <div className="topRightFirstContainer">
             <UserCard />
             <Skills />
+            <Blogs />
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export default [
   {
     name: "Dev",
     Icon: FaDev,
-    link: "https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4",
+    link: "https://dev.to/4bhis1/",
   },
   {
     name: "Linkedin",
