@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import BLOGS from "../Constants/Blogs";
 import { GrNext } from "react-icons/gr";
 import "./styles/blogs.css";
@@ -54,14 +54,14 @@ const Images = () => {
         </button>
       </div>
       <div class="img-container" ref={elementRef}>
-        {Photos.map((placement, i) => (
+        {/* {Photos.map((placement, i) => (
           <img
             key={i}
             loading="lazy"
             alt={placement}
             src={unsplashed + `?${placement}`}
           />
-        ))}
+        ))} */}
       </div>
     </>
   );
