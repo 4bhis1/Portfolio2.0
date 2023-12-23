@@ -1,13 +1,13 @@
 import React from "react";
 import "./styles/skills.css";
-import skills from "../Constants/Skills";
+import SKILLS from "../Constants/Skills";
 
 const StackCard = ({ skills }) => {
   return (
     <div className="stackCard">
-      {Object.entries(skills).map(([title, value], index) => {
+      {Object.entries(skills).map(([title, value]) => {
         return (
-          <div className={`stackCardItem ${value}`} key={`skill-${index}`}>
+          <div className={`stackCardItem ${value}`} key={title}>
             {title}
           </div>
         );
@@ -19,10 +19,10 @@ const StackCard = ({ skills }) => {
 const Skills = () => {
   return (
     <div className="skillsContainer">
-      {Object.keys(skills).map((doc, index) => (
-        <div className="skills">
-          <div>{doc}</div>
-          <StackCard skills={skills[doc]} />
+      {Object.keys(SKILLS).map((doc) => (
+        <div className="skills" key={doc}>
+          <div className="skillText">{doc}</div>
+          <StackCard skills={SKILLS[doc]} />
         </div>
       ))}
     </div>

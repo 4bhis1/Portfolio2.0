@@ -14,17 +14,19 @@
 .stackCard {
   flex-wrap: wrap;
   text-wrap: nowrap;
+  overflow: hidden;
 }
 
 .stackCardItem {
-  width: min-content;
   background-color: #30363d;
   margin: 2px;
-  padding: 2px 8px;
+  padding: 4px 8px;
   border-radius: 10px;
   border-width: 1px;
   border-style: solid;
-  color: #c9d1d9;
+  color: var(--color-foreground);
+  font-size: 14px;
+  align-items: center;
 }
 
 .normal {
@@ -41,4 +43,10 @@
 
 .toLearn {
   border-color: rgba(239, 68, 68, 0.6);
+}
+
+.skillText {
+  margin: 0 0 10px 0;
+  color: var(--color-foreground);
+  font-size: 22px;
 }

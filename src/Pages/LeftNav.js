@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles/leftNav.css";
-import pageRoutes from "../Constants/Routes";
-import social from "../Constants/Platforms";
+import PAGEROUTES from "../Constants/Routes";
+import SOCIAL from "../Constants/Platforms";
 
 const Routes = () => {
   let progressHeight = 50;
@@ -15,7 +15,7 @@ const Routes = () => {
           className="progress"
           style={{ height: progressHeight * selectedRouteIndex }}
         />
-        {pageRoutes.map(({ name, Icon }, index) => {
+        {PAGEROUTES.map(({ name, Icon }, index) => {
           return (
             <div
               className="list"
@@ -52,7 +52,7 @@ const Social = () => {
     <div className="column socialContainer">
       <div className="socialText">Social</div>
       <div className="socials">
-        {social.map(({ name, Icon, link }) => {
+        {SOCIAL.map(({ name, Icon, link }) => {
           return (
             <div
               key={name}

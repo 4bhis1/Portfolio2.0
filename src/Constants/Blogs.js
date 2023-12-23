@@ -1,30 +1,15 @@
 export default [
   {
-    title: "VsCode extensions I wished, I knew before.",
-    desc: `
-        Error lens
-        Better Comments
-        Code Spell Checker
-        Color Highlight
-        Error lens
-        ES7
-        ESLint
-        gitLens
-        HTML CSS support
-        Image proview
-        ES6 code snippets
-        material icon theme
-        shell format
-        turbo console log
-        Tabnine
-        Prettier
-    `,
+    title: "Create your own Schema Type in mongoose.",
+    link: "https://dev.to/4bhis1/create-your-own-schema-type-in-mongoose-71k",
+    desc: "Sometimes in development, we need to some kind of fields like color, code(ISS-1), which have similar logics in all the table, so to write DRY code, developer can write their own schema type.",
   },
   {
-    title: "handle light and dark mode in React",
-    desc: `
-        Dark Mode
-        Light Mode
-    `,
+    title: "Throttling and debouncing.",
+    desc: "Sometimes in development, we need to optimize the performance of your code that runs repeatedly within a short period of time.",
+  },
+  {
+    title: "Throttling and debouncing.",
+    desc: "Sometimes in development, we need to optimize the performance of your code that runs repeatedly within a short period of time.",
   },
 ];

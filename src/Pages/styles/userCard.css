@@ -22,11 +22,12 @@
   border-width: 4px;
   border-style: solid;
   border-color: var(--color-foreground);
+  transform: scaleX(-1);
 }
 
 .userName {
   font-size: 3vw;
-  line-height: 70px;
+  margin-bottom: 10px;
 }
 
 .userDesc {
