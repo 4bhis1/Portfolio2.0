@@ -27,6 +27,7 @@ export default {
     Docker: "toLearn",
     Postman: "favourable",
     Jenkins: "usedTo",
-    AWS: "toLearn",
+    AWS: "hide",
+    Ngrok : 'usedTo',
   },
 };
