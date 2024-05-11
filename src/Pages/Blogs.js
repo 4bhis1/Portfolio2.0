@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import BLOGS from "../Constants/Blogs";
 import { GrNext } from "react-icons/gr";
 import "./styles/blogs.css";
@@ -68,9 +68,18 @@ const Images = () => {
 };
 
 const Blogs = () => {
+  const ref = useRef(null);
+  const parentRef = useRef(null);
+  useEffect(() => {
+    console.log("width", ref.current ? ref.current.offsetWidth : 0);
+    console.log("width", parentRef.current ? parentRef.current.width : 0);
+    console.log("width", parentRef.current ? parentRef.current.offsetWidth : 0);
+  }, [ref.current]);
+
   return (
     <div className="column">
       <div
+        ref={parentRef}
         style={{
           justifyContent: "space-between",
           padding: "2px 10px",
@@ -85,27 +94,19 @@ const Blogs = () => {
           height: 250,
           overflowX: "scroll",
           position: "relative",
+          scrollBehavior: "smooth",
         }}
       >
-        {BLOGS.map((doc) => (
-          <BlogCard {...doc} />
-        ))}
+        <div ref={ref}>
+          {BLOGS.map((doc) => (
+            <BlogCard {...doc} />
+          ))}
+        </div>
+
         <div
-          style={{
-            color: "white",
-            padding: 10,
-            margin: 10,
-            backgroundColor: "aliceblue",
-            alignItems: "center",
-            justifyContent: "center",
-            position: "sticky",
-            right: 20,
-            top: 95,
-            borderRadius: 35,
-            cursor: "pointer",
-          }}
+          className="nextButton"
           onClick={() => {
-            console.log("clicke");
+            ref.scrollTop += 10;
           }}
         >
           <GrNext />

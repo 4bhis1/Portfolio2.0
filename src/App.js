@@ -5,6 +5,7 @@ import Mode from "./Components/Mode";
 import UserCard from "./Pages/UserCard";
 import LeftNav from "./Pages/LeftNav";
 import Blogs from "./Pages/Blogs";
+import Timeline from "./Pages/Timeline";
 
 function App() {
   const [isDark, updateTheme] = useState(true);
@@ -26,13 +27,14 @@ function App() {
   return (
     <>
       <div className="topContainer">
-        <LeftNav />
+        <div className="column topLeftContainer">
+          <LeftNav />
+        </div>
         <div className="column topRightContainer">
-          <div className="topRightFirstContainer">
-            <UserCard />
-            <Skills />
-            <Blogs />
-          </div>
+          <UserCard />
+          <Skills />
+          <Timeline />
+          {/* <Blogs /> */}
         </div>
       </div>
       <Mode toggleTheme={toggleTheme} isDark={isDark} />

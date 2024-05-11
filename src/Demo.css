@@ -1,0 +1,34 @@
+.arrow-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow-button:hover {
+    transform: rotate(180deg);
+}
+
+.arrow-button::before,
+.arrow-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow-button::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.arrow-button::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}

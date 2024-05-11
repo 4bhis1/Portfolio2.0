@@ -1,0 +1,29 @@
+.timelinContainer {
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--color-secondaryColor);
+  flex: 1;
+  flex-direction: column;
+}
+
+.timelineHeader {
+  margin: 0 0 10px 0;
+  color: var(--color-foreground);
+  font-size: 22px;
+}
+
+.timeline {
+  height: 200px;
+  background-color: #c0c0cc;
+  overflow: hidden;
+  overflow-x: scroll;
+  position: relative;
+  display: flex;
+  padding: 60px;
+
+}
+
+.timelineElement {
+  position: absolute;
+}
