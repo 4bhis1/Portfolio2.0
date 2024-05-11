@@ -4,7 +4,7 @@
   border-radius: 10px;
   /* margin: 20px; */
   background-color: var(--color-secondaryColor);
-  background-image: url("../../Image/kl.jpeg");
+  background-image: url("../../Asset/kl.jpeg");
   color: var(--color-foreground);
   align-items: center;
   justify-content: space-between;
@@ -41,6 +41,16 @@
   align-items: center;
   padding: 8px;
   background-color: var(--color-linkedin);
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.downloadResume {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 8px;
+  background-color: var(--color-pdf);
   gap: 8px;
   border-radius: 8px;
 }

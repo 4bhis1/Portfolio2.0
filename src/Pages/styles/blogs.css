@@ -13,3 +13,19 @@
   flex-grow: 0;
   flex-shrink: 0;
 }
+
+.nextButton {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  position: initial;
+  right: 20px;
+  top: 95px;
+  border-radius: 100px;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}

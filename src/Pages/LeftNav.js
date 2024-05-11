@@ -73,10 +73,10 @@ const Social = () => {
 
 const LeftNav = () => {
   return (
-    <div className="leftNavContainer">
+    <>
       <Routes />
       <Social />
-    </div>
+    </>
   );
 };
 

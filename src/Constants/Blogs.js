@@ -12,4 +12,16 @@ export default [
     title: "Throttling and debouncing.",
     desc: "Sometimes in development, we need to optimize the performance of your code that runs repeatedly within a short period of time.",
   },
+  {
+    title: "Throttling and debouncing.",
+    desc: "Sometimes in development, we need to optimize the performance of your code that runs repeatedly within a short period of time.",
+  },
+  // {
+  //   title: "Throttling and debouncing.",
+  //   desc: "Sometimes in development, we need to optimize the performance of your code that runs repeatedly within a short period of time.",
+  // },
+  // {
+  //   title: "Throttling and debouncing.",
+  //   desc: "Sometimes in development, we need to optimize the performance of your code that runs repeatedly within a short period of time.",
+  // },
 ];

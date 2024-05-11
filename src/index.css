@@ -24,6 +24,7 @@ div {
   --image-grayscale: 0;
   --image-opacity: 100%;
   --color-linkedin: #004182;
+  --color-pdf: #ca3737;
 }
 
 .dark {
@@ -36,22 +37,30 @@ div {
   --image-grayscale: 50%;
   --image-opacity: 90%;
   --color-linkedin: #004182;
+  --color-pdf: #9c4949;
 }
 
 .topContainer {
   height: 100vh;
   width: 100vw;
+  overflow-y: hidden;
+}
+
+.topLeftContainer {
+  background-color: var(--color-secondaryColor);
+  border-radius: 10px;
+  margin: 10px;
+  height: 98vh;
+  width: 25vw;
+  position: relative;
   overflow: hidden;
 }
 
 .topRightContainer {
   margin: 10px 10px 10px 0;
+  height: 98vh;
+  position: relative;
   overflow-y: scroll;
-}
-
-.topRightFirstContainer {
-  flex-direction: column;
-  overflow: hidden;
 }
 
 img,

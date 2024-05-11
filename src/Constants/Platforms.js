@@ -4,6 +4,7 @@ import {
   FaLinkedin,
   FaInstagramSquare,
 } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 export default [
   {
@@ -19,7 +20,12 @@ export default [
   {
     name: "Linkedin",
     Icon: FaLinkedin,
-    link: "https://www.linkedin.com/in/absk/",
+    link: "https://www.linkedin.com/in/4bhis1/",
+  },
+  {
+    name: "LeetCode",
+    Icon: SiLeetcode,
+    link: "https://leetcode.com/u/4bhis1/",
   },
   {
     name: "Instagram",
