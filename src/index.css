@@ -21,6 +21,10 @@ div {
   --color-background: #fafafa;
   --color-foreground: #1f2023;
 
+  --color-secondaryColor: #a19faf;
+
+  --color-scrollColor: #a3dbec;
+
   --image-grayscale: 0;
   --image-opacity: 100%;
   --color-linkedin: #004182;
@@ -34,10 +38,31 @@ div {
 
   --color-secondaryColor: #1c1b23;
 
+  --color-scrollColor: #346b7c;
+
   --image-grayscale: 50%;
   --image-opacity: 90%;
   --color-linkedin: #004182;
   --color-pdf: #9c4949;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-scrollColor);
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .topContainer {

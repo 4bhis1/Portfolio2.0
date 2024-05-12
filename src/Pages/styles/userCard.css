@@ -2,9 +2,7 @@
   height: 150px;
   padding: 20px 40px;
   border-radius: 10px;
-  /* margin: 20px; */
   background-color: var(--color-secondaryColor);
-  background-image: url("../../Asset/kl.jpeg");
   color: var(--color-foreground);
   align-items: center;
   justify-content: space-between;

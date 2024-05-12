@@ -20,7 +20,7 @@ const Skills = () => {
   return (
     <div className="skillsContainer">
       {Object.keys(SKILLS).map((doc) => (
-        <div className="skills" key={doc}>
+        <div className="skills" key={doc} title={doc}>
           <div className="skillText">{doc}</div>
           <StackCard skills={SKILLS[doc]} />
         </div>

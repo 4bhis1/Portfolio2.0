@@ -33,7 +33,7 @@ function App() {
         <div className="column topRightContainer">
           <UserCard />
           <Skills />
-          <Timeline />
+          {/* <Timeline /> */}
           {/* <Blogs /> */}
         </div>
       </div>
