@@ -7,7 +7,7 @@ import { RiProjectorFill } from "react-icons/ri";
 
 export default [
   { name: "Home", Icon: AiOutlineHome },
-  { name: "Timeline", Icon: MdTimeline },
+  // { name: "Timeline", Icon: MdTimeline },
   { name: "Projects", Icon: RiProjectorFill },
   { name: "Blogs", Icon: ImBlog },
   { name: "Footer", Icon: GrContactInfo },

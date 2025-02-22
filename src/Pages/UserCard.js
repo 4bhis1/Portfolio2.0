@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/userCard.css";
 import MyImage from "../Asset/AbhishekKumar.jpg";
-import Pdf from "../Asset/Abhishek2024.pdf";
+import Pdf from "../Asset/Resume.pdf";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsFillFilePdfFill } from "react-icons/bs";
 
@@ -34,7 +34,7 @@ const UserCard = () => {
                 const url = window.URL.createObjectURL(new Blob([blob]));
                 const link = document.createElement("a");
                 link.href = url;
-                link.download = "AbhishekKumar'sResume.pdf";
+                link.download = "Abhishek'sResume.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);

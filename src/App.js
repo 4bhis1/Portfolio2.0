@@ -6,6 +6,7 @@ import UserCard from "./Pages/UserCard";
 import LeftNav from "./Pages/LeftNav";
 import Blogs from "./Pages/Blogs";
 import Timeline from "./Pages/Timeline";
+import Projects from "./Pages/Projects";
 
 function App() {
   const [isDark, updateTheme] = useState(true);
@@ -34,6 +35,7 @@ function App() {
           <UserCard />
           <Skills />
           {/* <Timeline /> */}
+          <Projects />
           {/* <Blogs /> */}
         </div>
       </div>

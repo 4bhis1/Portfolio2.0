@@ -1,0 +1,144 @@
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  background: #fff; /* Ensure background is white for contrast */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images scale nicely */
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ensures content fills available space */
+  padding-top: 12px;
+}
+
+.project-content h3 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.project-content p {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 12px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 10px; /* Add spacing between links */
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: #0056b3;
+}
+
+.links a svg {
+  margin-right: 6px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-top: auto; /* Push rating to bottom */
+  padding-top: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .project-image {
+    height: 150px; /* Reduce image height on smaller screens */
+  }
+
+  .project-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Stack cards on very small screens */
+    padding: 0 10px;
+  }
+
+  .project-card {
+    padding: 12px;
+  }
+
+  .project-image {
+    height: 120px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+}

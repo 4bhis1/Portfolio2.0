@@ -2,44 +2,26 @@ import React from "react";
 import "./styles/timeline.css";
 
 const Timeline = () => {
-  const toRadian = (angle) => {
-    return (angle * Math.PI) / 180.0;
-  };
+  const timelineData = [
+    { year: 2015, event: 'Joined Daffodil Software' },
+    { year: 2016, event: 'Completed 10th Grade' },
+    { year: 2018, event: 'Completed 12th Grade' },
+    { year: 2022, event: 'Earned B.Tech Degree' },
+  ];
 
   return (
     <div className="timelinContainer">
       <div className="timelineHeader">Timeline</div>
-      <div className="timeline">
-        {Array(1200)
-          .fill(0)
-          .map((doc, index) => {
-            const calculation = Math.round(
-              180 -
-                Math.sin(toRadian(Math.sin(toRadian(index)))) +
-                Math.cos(
-                  toRadian(Math.sin(toRadian(index))) +
-                    toRadian(Math.cos(toRadian(index)))
-                ) *
-                  100
-            );
-            console.log(
-              calculation,
-              // Math.round(Math.sin(Math.sin(toRadian(index)) + Math.cos(toRadian(index + Math.cos(toRadian(index))))) * 100),
-              // \sin\left(\sin x\right)+\cos\left(\sin x+\cos x\right)
-              index
-            );
-            return (
-              <div
-                className="timelineElement"
-                style={{
-                  top: calculation,
-                  left: index,
-                }}
-              >
-                .
-              </div>
-            );
-          })}
+
+      <div className="timeline-container">
+        {timelineData.map((item, index) => (
+          <div className="timeline-item" key={index}>
+            <div className="timeline-content">
+              <span className="year">{item.year}</span>
+              <p>{item.event}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

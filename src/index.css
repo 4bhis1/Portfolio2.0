@@ -86,6 +86,7 @@ div {
   height: 98vh;
   position: relative;
   overflow-y: scroll;
+  /* display: block; */
 }
 
 img,
